@@ -24,8 +24,8 @@ allow updater_app cache_recovery_file:file create_file_perms;
 allow updater_app ota_package_file:dir create_dir_perms;
 allow updater_app ota_package_file:file create_file_perms;
 
-allow updater_app ota_data_file:dir create_dir_perms;
-allow updater_app ota_data_file:file create_file_perms;
+allow updater_app ota_metadata_file:dir create_dir_perms;
+allow updater_app ota_metadata_file:file create_file_perms;
 
 get_prop(updater_app, default_prop)
 get_prop(updater_app, build_prop)
